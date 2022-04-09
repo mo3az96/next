@@ -162,15 +162,18 @@ $(document).ready(function () {
     $(".mo-accordion").not(this).siblings().slideUp(500);
   });
 
-   ///////// **menu** /////////
-   if ($(window).width() <= 1199) {
-    $('.menu-btn').click(function () {
-        $(".header-nav").slideDown();
-        $("body").addClass("overflow");
+  ///////// **menu** /////////
+  if ($(window).width() <= 1199) {
+    $(".menu-btn").click(function () {
+      $(".header-nav").slideDown();
+      $("body").addClass("overflow");
     });
-    $('.close-btn').click(function () {
-        $(".header-nav").slideUp();
-        $("body").removeClass("overflow");
+    $(".close-btn").click(function () {
+      $(".header-nav").slideUp();
+      $("body").removeClass("overflow");
     });
-}
+    $(".user-mobile>a").click(function () {
+      $(".user-mobile-list").slideToggle();
+    });
+  }
 });

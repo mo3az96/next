@@ -661,15 +661,15 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .header-list a:hover {
-  color: #f68c20;
+  color: #85c556;
 }
 
 .header-list a.active {
-  color: #f68c20;
+  color: #85c556;
 }
 
 html[dir="rtl"] .header-list a.lang {
-  font-family: en;
+  font-family: ar;
 }
 
 html[dir="ltr"] .header-list a.lang {
@@ -1692,6 +1692,12 @@ html[dir="rtl"] .footer-list {
   }
   .header-list a {
     font-size: 1.5em;
+  }
+  .header-list a:hover {
+    color: #85c556;
+  }
+  .header-list a.active {
+    color: #85c556;
   }
   .header-btns {
     -webkit-box-pack: center;

@@ -176,4 +176,10 @@ $(document).ready(function () {
       $(".user-mobile-list").slideToggle();
     });
   }
+
+  if ($(window).width() <= 992) {
+    $(".cats-title").click(function () {
+      $(".cats-list").slideToggle();
+    });
+  }
 });

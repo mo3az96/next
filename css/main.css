@@ -2173,6 +2173,184 @@ aside {
   }
 }
 
+.khareeg-main-div {
+  padding: 120px 15px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.khareeg-main-div::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.48;
+  content: "";
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .khareeg-main-div {
+    padding: 40px 0;
+    text-align: center;
+  }
+}
+
+.khareeg-main-div .khareeg-logo {
+  width: 250px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 1700px) {
+  .khareeg-main-div .khareeg-logo {
+    width: 265px;
+  }
+}
+
+@media (max-width: 767px) {
+  .khareeg-main-div .khareeg-logo {
+    width: 120px;
+    margin-bottom: 15px;
+  }
+}
+
+.khareeg-main-div .about-page-title {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 700;
+  width: 100%;
+  margin: 0 0 70px;
+}
+
+@media (max-width: 991px) {
+  .khareeg-main-div .about-page-title {
+    font-size: 1.75em;
+    margin: 0 0 15px;
+  }
+}
+
+.khareeg-main-div .khareeg-btn {
+  width: 400px;
+  height: 60px;
+  background-color: #85c556;
+  position: relative;
+  z-index: 2;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.625em;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  margin: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.khareeg-main-div .khareeg-btn:hover {
+  color: #fff;
+  background-color: #f68c20;
+  border-color: #f68c20;
+}
+
+@media (max-width: 991px) {
+  .khareeg-main-div .khareeg-btn {
+    margin: auto;
+    font-size: 1em;
+    height: 45px;
+    width: 100%;
+  }
+}
+
+.khareeg-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  color: #1b211c;
+  margin: 0 0 30px;
+}
+
+@media (max-width: 1199px) {
+  .khareeg-title {
+    font-size: 1.5em;
+    margin: 20px 0 15px;
+  }
+}
+
+.khareeg-desc {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #707070;
+  margin: 0 0 30px;
+}
+
+@media (max-width: 1199px) {
+  .khareeg-desc {
+    font-size: 1em;
+  }
+}
+
+.courses-cont {
+  padding-top: 90px;
+}
+
+@media (max-width: 1199px) {
+  .courses-cont {
+    padding-top: 40px;
+  }
+}
+
+.courses-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5em;
+  color: #85c556;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.courses-title img {
+  margin-bottom: 9px;
+}
+
+.courses-desc {
+  font-size: 1.25em;
+  color: #707070;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+
 footer {
   background-color: #1b211c;
   padding: 55px 0 0;

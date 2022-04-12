@@ -145,6 +145,31 @@ $(document).ready(function () {
     },
   });
 
+  var who = new Swiper(".who-slider .swiper", {
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 28,
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1700: {
+        slidesPerView: 3,
+        spaceBetween: 28,
+      },
+    },
+    pagination: {
+      el: ".who-slider .swiper-pagination",
+      clickable: true,
+    },
+  });
+
   ///////// **footer** /////////
   if ($(window).width() <= 1199) {
     $(".footer-list-title").addClass("mo-accordion");
@@ -182,4 +207,45 @@ $(document).ready(function () {
       $(".cats-list").slideToggle();
     });
   }
+
+  $(window).scroll(function () {
+    numbers();
+  });
+
+  $(".scroll-btn").on("click", function (e) {
+    e.preventDefault();
+    var hash = this.hash;
+    $("html, body").animate(
+      {
+        scrollTop: $(this.hash).offset().top,
+      },
+      500,
+      function () {
+        window.location.hash = hash;
+      }
+    );
+  });
 });
+
+var a = 0;
+function numbers() {
+  if (a === 0 && $(this).scrollTop() >= $(".numbers-cont").offset().top - 500) {
+    $(".number strong").each(function () {
+      $(this)
+        .prop("Counter", 0)
+        .animate(
+          {
+            Counter: $(this).text(),
+          },
+          {
+            duration: 1000,
+            easing: "swing",
+            step: function (now) {
+              $(this).text(Math.ceil(now));
+            },
+          }
+        );
+    });
+    a = 1;
+  }
+}

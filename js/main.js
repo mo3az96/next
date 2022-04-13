@@ -264,6 +264,11 @@ $(document).ready(function () {
       }
     );
   });
+
+  $(".user-btns .submit-btn").on("click", function (e) {
+    $(".form-group").toggleClass("preview");
+    $(this).parents(".user-btns").toggleClass("active");
+  });
 });
 
 var a = 0;
@@ -296,4 +301,10 @@ function showPass(showPass) {
   } else {
     sibling.setAttribute("type", "password");
   }
+}
+
+function profileImg(input) {
+  $(".user-img .img-cont img")[0].src = (
+    window.URL ? URL : webkitURL
+  ).createObjectURL(input.files[0]);
 }

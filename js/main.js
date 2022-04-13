@@ -117,6 +117,10 @@ $(document).ready(function () {
       el: ".news-slider .swiper-pagination",
       clickable: true,
     },
+    navigation: {
+      nextEl: ".news-related .swiper-btn-next",
+      prevEl: ".news-related .swiper-btn-prev",
+    },
   });
 
   var testimonials = new Swiper(".testimonials-slider .swiper", {
@@ -139,9 +143,9 @@ $(document).ready(function () {
         spaceBetween: 28,
       },
     },
-    pagination: {
-      el: ".testimonials-section .swiper-pagination",
-      clickable: true,
+    navigation: {
+      nextEl: ".testimonials-section .swiper-btn-next",
+      prevEl: ".testimonials-section .swiper-btn-prev",
     },
   });
 

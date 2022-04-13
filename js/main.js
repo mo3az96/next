@@ -284,3 +284,12 @@ function numbers() {
     a = 1;
   }
 }
+
+function showPass(showPass) {
+  sibling = showPass.parentElement.nextElementSibling;
+  if (showPass.checked) {
+    sibling.setAttribute("type", "text");
+  } else {
+    sibling.setAttribute("type", "password");
+  }
+}

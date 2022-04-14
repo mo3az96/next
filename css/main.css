@@ -3598,6 +3598,10 @@ html[dir="rtl"] .forms-cont .back svg {
   border-radius: 4px;
 }
 
+.main-user-div.test-results {
+  max-height: none;
+}
+
 .user-information {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3715,6 +3719,95 @@ html[dir="rtl"] .forms-cont .back svg {
 
 .user-btns.active .save-btn {
   visibility: visible;
+}
+
+.test-results {
+  width: 800px;
+}
+
+@media (min-width: 1700px) {
+  .test-results {
+    width: 920px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .test-results {
+    width: 100%;
+  }
+}
+
+.result-chart-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .result-chart-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.result-chart-text .result-text {
+  width: 450px;
+}
+
+@media (max-width: 991px) {
+  .result-chart-text .result-text {
+    width: 100%;
+  }
+}
+
+.result-chart-text .result-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #3363fc;
+  margin: 0 0 20px;
+}
+
+.result-chart-text .resuct-desc {
+  font-size: 1em;
+  color: #6a6a6a;
+  margin: 0;
+}
+
+.result-chart {
+  width: 100%;
+  max-width: 390px;
+  height: 350px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.result-chart #chartdiv {
+  width: 100%;
+  height: 100%;
+}
+
+.user-recommended-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #444444;
+  margin: 0 0 20px;
+}
+
+@media (max-width: 991px) {
+  .user-recommended-title {
+    margin-top: 40px;
+  }
 }
 
 footer {

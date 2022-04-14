@@ -175,7 +175,6 @@ $(document).ready(function () {
   });
 
   var recommended = new Swiper(".recommended-slider .swiper", {
-    loop: true,
     breakpoints: {
       0: {
         slidesPerView: 1,

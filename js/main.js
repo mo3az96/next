@@ -206,6 +206,74 @@ $(document).ready(function () {
       prevEl: ".recommended-slider .swiper-btn-prev",
     },
   });
+
+  var singleslider = new Swiper(".single-courses-slider .swiper", {
+    loop: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 8,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1700: {
+        slidesPerView: 3,
+        spaceBetween: 28,
+      },
+    },
+    pagination: {
+      el: ".single-courses-slider .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".single-courses-slider .swiper-btn-next",
+      prevEl: ".single-courses-slider .swiper-btn-prev",
+    },
+  });
+
+  var singleslider2 = new Swiper(".single-courses-slider2 .swiper", {
+    loop: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 8,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1700: {
+        slidesPerView: 3,
+        spaceBetween: 28,
+      },
+    },
+    pagination: {
+      el: ".single-courses-slider2 .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".single-courses-slider2 .swiper-btn-next",
+      prevEl: ".single-courses-slider2 .swiper-btn-prev",
+    },
+  });
   ///////// **footer** /////////
   if ($(window).width() <= 1199) {
     $(".footer-list-title").addClass("mo-accordion");

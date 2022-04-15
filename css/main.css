@@ -1688,6 +1688,337 @@ html[dir="ltr"] .testimonial {
   color: #85c556;
 }
 
+.radio label {
+  padding: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 1em;
+  color: #1b211c;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.radio label .mark {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #aaaaaa;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-margin-end: 7px;
+          margin-inline-end: 7px;
+}
+
+.radio label .mark::after {
+  border-radius: 50%;
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  content: "";
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.radio label input {
+  display: none;
+}
+
+.radio label input:checked ~ .mark {
+  background-color: #85c556;
+  border-color: #85c556;
+}
+
+.radio label input:checked ~ .mark::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.radio ~ .radio {
+  -webkit-margin-start: 25px;
+          margin-inline-start: 25px;
+}
+
+.timeModal .modal-content {
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 18px 24px 26px;
+  border-radius: 12px;
+  background-color: #fff;
+  position: relative;
+}
+
+.timeModal .btn-close {
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  padding: 0;
+  -webkit-box-shadow: 0px 15px 36px #0000001c;
+          box-shadow: 0px 15px 36px #0000001c;
+  -webkit-transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.timeModal .btn-close:hover {
+  opacity: 1;
+}
+
+.timeModal .course-img {
+  position: relative;
+  padding-bottom: 38.0457380457%;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.timeModal .course-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.timeModal .title-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.timeModal .title {
+  font-size: 1.25em;
+  font-weight: 500;
+  margin: 0;
+  color: #1b211c;
+}
+
+.timeModal .price {
+  font-size: 1.25em;
+  font-weight: 700;
+  margin: 0;
+  color: #85c556;
+}
+
+.timeModal .status-radios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.select-item {
+  width: 100%;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.select-item .select-content {
+  border-radius: 12px;
+  padding: 20px 15px;
+  background-color: rgba(133, 197, 86, 0.05);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select-item .mark {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 2px solid #aaaaaa;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-margin-end: 40px;
+          margin-inline-end: 40px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.select-item .mark svg {
+  margin: auto;
+  width: 12px;
+  height: 12px;
+  fill: #fff;
+  -webkit-transform: scale(0) rotate(360deg);
+          transform: scale(0) rotate(360deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.select-item .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.select-item .item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0;
+}
+
+.select-item .item .icon {
+  width: 25px;
+  fill: #aaaaaa;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+}
+
+.select-item .item .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.2;
+}
+
+.select-item .item .text span {
+  color: #aaa;
+  display: block;
+  font-weight: 700;
+  font-size: 0.875em;
+}
+
+.select-item .item .text strong {
+  color: #1b211c;
+  font-weight: 500;
+  font-size: 0.875em;
+}
+
+.select-item input {
+  display: none;
+}
+
+.select-item input:checked ~ .select-content {
+  background-color: rgba(133, 197, 86, 0.2);
+}
+
+.select-item input:checked ~ .select-content .mark {
+  background-color: #85c556;
+  border-color: #85c556;
+}
+
+.select-item input:checked ~ .select-content .mark svg {
+  -webkit-transform: scale(1) rotate(0deg);
+          transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+
+.modal-pay-btn {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 6px;
+  margin: 24px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #85c556;
+  color: #fff;
+  height: 50px;
+  font-weight: 700;
+  font-size: 1.125em;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-pay-btn:hover {
+  background-color: #f68c20;
+  color: #fff;
+}
+
 header {
   background-color: #1b211c;
   position: absolute;
@@ -1884,17 +2215,14 @@ header {
   opacity: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  inset-inline-end: 0;
 }
 
 @media (min-width: 1700px) {
   .user-list {
     width: 282px;
     inset-inline-start: 0;
-    -webkit-transform: none;
-            transform: none;
+    inset-inline-end: unset;
   }
 }
 
@@ -4282,21 +4610,19 @@ html[dir="rtl"] .forms-cont .back svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .single-side .share a {
-  margin: 0 9px;
+  margin: 0 4px;
   fill: #aaa;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 1700px) {
   .single-side .share a {
-    margin: 0 4px;
+    margin: 0 9px;
   }
 }
 

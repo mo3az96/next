@@ -336,6 +336,11 @@ $(document).ready(function () {
     $(".form-group").toggleClass("preview");
     $(this).parents(".user-btns").toggleClass("active");
   });
+
+  $("input[name='status']").on("change", function (e) {
+    $(".time-select").hide();
+    $("#" + this.value + ".time-select").show();
+  });
 });
 
 var a = 0;

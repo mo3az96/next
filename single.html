@@ -833,7 +833,13 @@
               <span class="discount"> 50% Off </span>
             </div>
             <div class="seats">11 seats left at this track</div>
-            <a href="#!" class="course-btn">Schedule Track</a>
+            <a
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#timeModal"
+              class="course-btn"
+              >Schedule Track</a
+            >
             <div class="side-info">
               <div class="course-feats">
                 <h3 class="feats-title">This course includes</h3>
@@ -1316,6 +1322,369 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <!-- Modal -->
+    <div class="modal fade timeModal" id="timeModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="course-img">
+            <img src="images/courses/01.jpg" class="img-fluid" />
+          </div>
+          <div class="title-price">
+            <h5 class="title">IT Fundamentals</h5>
+            <strong class="price"> 2000 EGP </strong>
+          </div>
+          <div class="form-body">
+            <div class="status-radios">
+              <div class="radio">
+                <label>
+                  <input
+                    type="radio"
+                    name="status"
+                    value="Online"
+                    checked="checked"
+                  />
+                  <span class="mark"> </span>
+                  Online
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="status" value="Offline" />
+                  <span class="mark"> </span>
+                  Offline
+                </label>
+              </div>
+            </div>
+            <div class="time-select" id="Online">
+              <label class="select-item">
+                <!-- <input type="checkbox" name="Online" /> -->
+                <input type="radio" name="Online" />
+                <div class="select-content">
+                  <span class="mark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      />
+                    </svg>
+                  </span>
+                  <div class="items">
+                    <div class="item date">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512"
+                        >
+                          <path
+                            d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <span>Date</span>
+                        <strong>may 15, 2022</strong>
+                      </div>
+                    </div>
+                    <div class="item time">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <span>Time</span>
+                        <strong>02:00 PM</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+              <label class="select-item">
+                <!-- <input type="checkbox" name="Online" /> -->
+                <input type="radio" name="Online" />
+                <div class="select-content">
+                  <span class="mark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      />
+                    </svg>
+                  </span>
+                  <div class="items">
+                    <div class="item date">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512"
+                        >
+                          <path
+                            d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <span>Date</span>
+                        <strong>may 15, 2022</strong>
+                      </div>
+                    </div>
+                    <div class="item time">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <span>Time</span>
+                        <strong>02:00 PM</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+              <label class="select-item">
+                <!-- <input type="checkbox" name="Online" /> -->
+                <input type="radio" name="Online" />
+                <div class="select-content">
+                  <span class="mark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      />
+                    </svg>
+                  </span>
+                  <div class="items">
+                    <div class="item date">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512"
+                        >
+                          <path
+                            d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <span>Date</span>
+                        <strong>may 15, 2022</strong>
+                      </div>
+                    </div>
+                    <div class="item time">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <span>Time</span>
+                        <strong>02:00 PM</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+              <label class="select-item">
+                <!-- <input type="checkbox" name="Online" /> -->
+                <input type="radio" name="Online" />
+                <div class="select-content">
+                  <span class="mark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      />
+                    </svg>
+                  </span>
+                  <div class="items">
+                    <div class="item date">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512"
+                        >
+                          <path
+                            d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <span>Date</span>
+                        <strong>may 15, 2022</strong>
+                      </div>
+                    </div>
+                    <div class="item time">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <span>Time</span>
+                        <strong>02:00 PM</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="time-select" id="Offline" style="display: none">
+              <label class="select-item">
+                <!-- <input type="checkbox" name="Offline" /> -->
+                <input type="radio" name="Offline" />
+                <div class="select-content">
+                  <span class="mark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      />
+                    </svg>
+                  </span>
+                  <div class="items">
+                    <div class="item date">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512"
+                        >
+                          <path
+                            d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <span>Date</span>
+                        <strong>may 16, 2022</strong>
+                      </div>
+                    </div>
+                    <div class="item time">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <span>Time</span>
+                        <strong>12:00 AM</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+              <label class="select-item">
+                <!-- <input type="checkbox" name="Offline" /> -->
+                <input type="radio" name="Offline" />
+                <div class="select-content">
+                  <span class="mark">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"
+                      />
+                    </svg>
+                  </span>
+                  <div class="items">
+                    <div class="item date">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512"
+                        >
+                          <path
+                            d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <span>Date</span>
+                        <strong>may 16, 2022</strong>
+                      </div>
+                    </div>
+                    <div class="item time">
+                      <div class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="text">
+                        <span>Time</span>
+                        <strong>12:00 AM</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <a href="payment.html" class="modal-pay-btn">
+              Porceeed to payment
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>

@@ -4654,6 +4654,545 @@ html[dir="rtl"] .forms-cont .back svg {
   fill: #ff4500;
 }
 
+.payment-grid {
+  margin: auto;
+  width: 100%;
+  max-width: 1362px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  gap: 56px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 1199px) {
+  .payment-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.payment-side {
+  border: 1px solid #cccccc;
+  border-radius: 12px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40px;
+}
+
+@media (max-width: 1199px) {
+  .payment-side {
+    position: relative;
+    top: auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.payment-side .side-body {
+  padding: 22px 24px 11px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.payment-side .course-img {
+  position: relative;
+  width: 100%;
+  padding-bottom: 83.9598997494%;
+  border-radius: 12px;
+  overflow: hidden;
+  display: block;
+}
+
+.payment-side .course-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.payment-side .course-name {
+  margin-top: 20px;
+}
+
+.payment-side .course-link {
+  font-size: 1.125em;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #2b312a;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.payment-side .course-link:hover {
+  color: #f68c20;
+}
+
+.payment-side .owner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 16px;
+}
+
+.payment-side .owner img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+.payment-side .owner span {
+  -webkit-margin-start: 4px;
+          margin-inline-start: 4px;
+  color: #444444;
+  font-weight: 500;
+  font-size: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.payment-side .owner:hover span {
+  color: #85c556;
+}
+
+.payment-side .side-totals {
+  padding: 16px 24px 24px;
+}
+
+.payment-side .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.payment-side .total strong {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #2b312a;
+}
+
+.payment-side .total span {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #aaaaaa;
+}
+
+.payment-side .total:last-of-type {
+  border-top: 1px solid #cccccc;
+  margin-bottom: 0;
+  margin-top: 16px;
+  padding-top: 16px;
+}
+
+.payment-side .total:last-of-type span {
+  color: #f68c20;
+  font-weight: 700;
+}
+
+.payment-content {
+  border: 1px solid #cccccc;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media (max-width: 1199px) {
+  .payment-content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.payment-tabs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.payment-tabs button {
+  white-space: nowrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 55px;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  -webkit-border-end: 1px solid #cccccc;
+          border-inline-end: 1px solid #cccccc;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #1b211c;
+  fill: #85c556;
+  stroke: #85c556;
+  padding: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.payment-tabs button:last-of-type {
+  -webkit-border-end: none;
+          border-inline-end: none;
+}
+
+.payment-tabs button svg {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.payment-tabs button:hover {
+  background-color: #1b211c;
+  border-color: #1b211c;
+  color: #fff;
+  fill: #fff;
+  stroke: #fff;
+}
+
+.payment-tabs button.active {
+  background-color: #85c556;
+  border-color: #85c556;
+  fill: #fff;
+  stroke: #fff;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .payment-tabs button span {
+    display: none;
+  }
+}
+
+.payment-tab-content {
+  padding: 40px;
+}
+
+@media (max-width: 1199px) {
+  .payment-tab-content {
+    padding: 25px 15px;
+  }
+}
+
+.payment-tab-content .visaMastercard-title {
+  font-size: 1.375em;
+  font-weight: 700;
+  color: #1b211c;
+  margin: 0 0 34px;
+  text-align: center;
+}
+
+.payment-tab-content .visaMastercard-methods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 66px;
+}
+
+.payment-tab-content .visaMastercard-methods img {
+  margin: 0 12px;
+}
+
+.payment-tab-content .payment-btn {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.125em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+  background-color: #85c556;
+  height: 55px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.payment-tab-content .payment-btn:hover {
+  background-color: #f68c20;
+  color: #fff;
+}
+
+.payment-tab-content .bank-title {
+  font-size: 1.25em;
+  color: #1b211c;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.payment-tab-content .bankInfo-receipt {
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 991px) {
+  .payment-tab-content .bankInfo-receipt {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.payment-tab-content .bank-info {
+  width: 100%;
+}
+
+.payment-tab-content .our-account {
+  -webkit-box-shadow: 0px 0px 8px #0000001a;
+          box-shadow: 0px 0px 8px #0000001a;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.payment-tab-content .our-account .bank-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.25em;
+  color: #1b211c;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.payment-tab-content .our-account .bank-head img {
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
+  padding: 5px 13px;
+  -webkit-margin-end: 14px;
+          margin-inline-end: 14px;
+}
+
+.payment-tab-content .our-account .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.25em;
+  color: #1b211c;
+  font-weight: 500;
+  margin-top: 11px;
+}
+
+.payment-tab-content .our-account .info span {
+  color: #aaaaaa;
+}
+
+@media (max-width: 767px) {
+  .payment-tab-content .our-account .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .payment-tab-content .our-account .info span {
+    text-align: start;
+    width: 100%;
+  }
+}
+
+.payment-tab-content .receipt-upload {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-margin-start: 55px;
+          margin-inline-start: 55px;
+}
+
+@media (max-width: 991px) {
+  .payment-tab-content .receipt-upload {
+    margin: 0 auto 25px;
+  }
+}
+
+.payment-tab-content .receipt-upload .icon {
+  width: 250px;
+  height: 213px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #cccccc;
+  border-radius: 12px;
+  fill: #aaa;
+}
+
+.payment-tab-content .receipt-upload strong {
+  font-size: 1.25em;
+  color: #85c556;
+  font-weight: 500;
+  margin: 10px 0 0;
+  display: block;
+  text-align: center;
+}
+
+.payment-tab-content .receipt-upload span {
+  font-size: 0.875em;
+  color: #aaaaaa;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+}
+
+.payment-tab-content .receipt-upload input {
+  display: none;
+}
+
+.payment-tab-content .receipt-upload label {
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.payment-tab-content .user-account {
+  margin-top: 30px;
+}
+
+.payment-tab-content .headquarters-title {
+  font-size: 1.375em;
+  font-weight: 500;
+  color: #f68c20;
+  margin: 0 0 40px;
+}
+
+.payment-tab-content .headquarters-list-title {
+  font-size: 1.375em;
+  font-weight: 700;
+  color: #1b211c;
+  margin: 0 0 20px;
+}
+
+.payment-tab-content .branches {
+  margin: 0;
+}
+
+.payment-tab-content .branches li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+  font-size: 1.25em;
+  color: #1b211c;
+  font-weight: 500;
+}
+
+.payment-tab-content .branches li .icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  background-color: #85c556;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.payment-tab-content .pay-hint {
+  font-size: 1em;
+  display: block;
+  margin: 30px 0 20px;
+  width: 100%;
+  max-width: 400px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #aaaaaa;
+}
+
+.visaMastercard-tab {
+  padding-block: 80px 55px;
+}
+
+.headquarters-tab .payment-btn {
+  width: 300px;
+}
+
+@media (max-width: 1199px) {
+  .headquarters-tab .payment-btn {
+    width: 100%;
+  }
+}
+
 footer {
   background-color: #1b211c;
   padding: 55px 0 0;

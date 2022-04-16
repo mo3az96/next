@@ -301,8 +301,9 @@ $(document).ready(function () {
       $(".header-nav").slideUp();
       $("body").removeClass("overflow");
     });
-    $(".user-mobile>a").click(function () {
-      $(".user-mobile-list").slideToggle();
+    $(".nav-acc>a").click(function () {
+      $(".nav-panel").slideUp();
+      $(this).siblings(".nav-panel").slideToggle();
     });
   }
 

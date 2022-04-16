@@ -923,25 +923,26 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input::-webk
           justify-content: center;
 }
 
-.header-list li ~ li {
+.header-list > li ~ li {
   -webkit-margin-start: 20px;
           margin-inline-start: 20px;
 }
 
 @media (min-width: 1700px) {
-  .header-list li ~ li {
+  .header-list > li ~ li {
     -webkit-margin-start: 30px;
             margin-inline-start: 30px;
   }
 }
 
-.header-list li.active > a {
+.header-list > li.active > a {
   color: #85c556;
 }
 
-.header-list a {
+.header-list > li > a {
   font-size: 1em;
   font-weight: 500;
+  line-height: 40px;
   color: #fff;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
@@ -949,25 +950,68 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input::-webk
 }
 
 @media (min-width: 1700px) {
-  .header-list a {
+  .header-list > li > a {
     font-size: 1.25em;
   }
 }
 
-.header-list a:hover {
+.header-list > li > a:not([href]) {
+  color: #fff;
+  stroke: #fff;
+}
+
+.header-list > li > a:not([href]):hover {
+  color: #85c556;
+  stroke: #85c556;
+}
+
+@media (max-width: 1199px) {
+  .header-list > li > a:not([href]):hover {
+    color: #f68c20;
+    stroke: #f68c20;
+  }
+}
+
+.header-list > li > a:not([href]).active {
+  color: #85c556;
+  stroke: #85c556;
+}
+
+@media (max-width: 1199px) {
+  .header-list > li > a:not([href]).active {
+    color: #f68c20;
+    stroke: #f68c20;
+  }
+}
+
+.header-list > li > a:hover {
   color: #85c556;
 }
 
-.header-list a.active {
+.header-list > li > a.active {
   color: #85c556;
 }
 
-html[dir="rtl"] .header-list a.lang {
+html[dir="rtl"] .header-list > li > a.lang {
   font-family: ar;
 }
 
-html[dir="ltr"] .header-list a.lang {
+html[dir="ltr"] .header-list > li > a.lang {
   font-family: ar;
+}
+
+.header-list > .has-sub {
+  position: relative;
+}
+
+.header-list > .has-sub:hover > a {
+  color: #85c556;
+  stroke: #85c556;
+}
+
+.header-list > .has-sub:hover .nav-sublist {
+  visibility: visible;
+  opacity: 1;
 }
 
 .user-mobile {
@@ -1000,6 +1044,86 @@ html[dir="ltr"] .header-list a.lang {
       -ms-flex-pack: center;
           justify-content: center;
   color: #444444;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.user-mobile .user-mobile-list a:hover {
+  color: #f68c20;
+}
+
+.nav-sublist {
+  position: absolute;
+  top: 100%;
+  inset-inline-start: 0;
+  width: 200px;
+  border: 1px solid #cccccc;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-sublist a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #cccccc;
+  background-color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  color: #444444;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-sublist a:last-of-type {
+  border-bottom: none;
+}
+
+.nav-sublist a:hover {
+  background-color: #1b211c;
+  color: #fff;
+}
+
+@media (max-width: 1199px) {
+  .nav-sublist {
+    display: none;
+    border: none;
+    position: relative;
+    top: auto;
+    inset-inline-start: auto;
+    width: auto;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .nav-sublist a {
+    background-color: transparent;
+    font-size: 1.25em;
+    font-weight: 400;
+    padding: 0;
+    margin: 4px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #444444;
+    border-bottom: none;
+  }
+  .nav-sublist a:hover {
+    background-color: transparent;
+    color: #f68c20;
+  }
 }
 
 .swiper-pagination {
@@ -5679,16 +5803,13 @@ html[dir="rtl"] .footer-list {
     height: 100%;
     width: 100%;
   }
-  .header-list li {
-    margin: 8px 0;
-  }
-  .header-list a {
+  .header-list > li > a {
     font-size: 1.5em;
   }
-  .header-list a:hover {
+  .header-list > li > a:hover {
     color: #f68c20;
   }
-  .header-list a.active {
+  .header-list > li > a.active {
     color: #f68c20;
   }
   .header-btns {

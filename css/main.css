@@ -61,7 +61,7 @@ body {
 
 html[dir="rtl"] body {
   font-family: ar;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 html[dir="ltr"] body {
@@ -1382,6 +1382,16 @@ html[dir="ltr"] .testimonial {
 .testimonial .user .text {
   -webkit-margin-start: 20px;
           margin-inline-start: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .testimonial .user .name {
@@ -1407,7 +1417,7 @@ html[dir="ltr"] .testimonial {
   font-size: 1em;
   color: #444444;
   font-weight: 500;
-  margin: 0;
+  margin: 30px 0 0;
 }
 
 .footer-list.mo-panel {

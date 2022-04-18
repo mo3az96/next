@@ -8,10 +8,12 @@ $(document).ready(function () {
       function () {
         $(this).width("45%");
         $(this).children().get(0).play();
+        $(this).children(".cover").fadeOut();
       },
       function () {
         $(this).width("calc(100% / 3)");
         $(this).children().get(0).pause();
+        $(this).children(".cover").fadeIn();
       }
     );
   } else {
@@ -21,12 +23,15 @@ $(document).ready(function () {
       if ($(this).children(".text").css("display") == "none") {
         $(this).children(".text").slideDown(500);
         $(this).children().get(0).play();
+        $(this).children(".cover").fadeOut();
       } else {
         $(this).children(".text").slideUp(500);
         $(this).children().get(0).pause();
+        $(this).children(".cover").fadeIn();
       }
       $(".main-item").not(this).children(".text").slideUp(500);
       $(".main-item").not(this).children().get(0).pause();
+      $(".main-item").not(this).children(".cover").fadeIn();
     });
   }
   var partners = new Swiper(".partners-slider .swiper", {
